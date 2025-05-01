@@ -1,0 +1,32 @@
+# Emergency SSH Recovery Instructions
+
+## Console-Based Recovery
+
+1. Log into your hosting provider's dashboard
+2. Open a recovery console
+3. Login as root
+4. Modify SSH settings:
+
+```
+sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+sed -i 's/^PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+systemctl restart ssh || systemctl restart sshd
+passwd
+```
+
+5. Manually add your SSH public key:
+
+```
+mkdir -p ~/.ssh
+nano ~/.ssh/authorized_keys
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+```
+
+6. Once SSH login works, revert the config changes:
+
+```
+sed -i 's/^PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
+sed -i 's/^PermitRootLogin yes/PermitRootLogin prohibit-password/' /etc/ssh/sshd_config
+systemctl restart ssh
+```
