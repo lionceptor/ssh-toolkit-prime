@@ -1,5 +1,3 @@
-## README.md
-
 # SSH Toolkit Prime
 
 A minimal, modular SSH access and recovery toolkit built for engineers managing remote infrastructure — originally engineered for the Atlas Prime project.
