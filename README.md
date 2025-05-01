@@ -2,10 +2,6 @@
 
 A minimal, modular SSH access and recovery toolkit built for engineers managing remote infrastructure — originally engineered for the Atlas Prime project.
 
-[→ View on GitHub](https://github.com/lionceptor/ssh-toolkit-prime)
-
----
-
 ## Contents
 
 - `ssh_setup.sh`: Generate and configure SSH key-based access
@@ -40,7 +36,6 @@ See `docs/ssh_emergency.txt` for full console recovery walkthrough, including:
 - Resetting root password
 - Re-establishing public key authentication
 
----
 
 ## Recommendations
 
@@ -48,7 +43,6 @@ See `docs/ssh_emergency.txt` for full console recovery walkthrough, including:
 - 🔑 Back up SSH keys securely
 - 🧠 Use key passphrases or hardware tokens when possible
 
----
 
 ## License
 
