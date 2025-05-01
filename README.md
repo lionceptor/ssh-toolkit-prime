@@ -39,23 +39,13 @@ See `docs/ssh_emergency.txt` for full console recovery walkthrough, including:
 
 ## Recommendations
 
-- 🔒 Always disable password login after regaining access
-- 🔑 Back up SSH keys securely
-- 🧠 Use key passphrases or hardware tokens when possible
+- Always disable password login after regaining access
+- Back up SSH keys securely
+- Use key passphrases or hardware tokens when possible
 
 
 ## License
 
 [MIT](./LICENSE)
 
----
 
-## Contributing
-
-PRs welcome. If you have improvements, fixes, or extensions, open a pull request or issue.
-
-```bash
-git clone https://github.com/lionceptor/ssh-toolkit-prime.git
-cd ssh-toolkit-prime
-git checkout -b feature/something-new
-```
